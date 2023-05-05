@@ -1,0 +1,673 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Curriculum Vitae</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="4201d0c7-45b2-4bf4-a77b-a00ce4950e95" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-1.2.1&amp;q=80&amp;cs=tinysrgb&amp;fm=jpg&amp;crop=entropy" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">💻</span></div><h1 class="page-title">Curriculum Vitae</h1></header><div class="page-body"><p id="2f9cad03-dc80-4f1f-9a0f-b1e21917d1a9" class=""><a href="mailto:luisdenist@outlook.com">luisdenist@outlook.com</a>  ·  <a href="tel:8297640802">(829) 764 0802</a> ·  <a href="http://luisdenis.me/">luisdenis.me</a>  · <a href="https://www.linkedin.com/in/luisdenist/">in/luisdenist</a>  ·  <a href="https://github.com/LuisDet">github.com/luisdet</a></p><h1 id="4ab8bbe5-709b-490f-9ce3-d468dd9845a8" class="">LUIS ENRIQUE DENIS TAVAREZ</h1><p id="9c346ee1-65f4-4920-a608-dcaeb74ce399" class="">Senior Software Engineer</p><p id="fadc5a2c-8db3-4787-ac07-b0fe2bf504e3" class="">+5 years experience as software Engineering. Developing in multiples systems like Microsoft Dynamics, Microsoft CMS, Oodoo, Tronweb and Web platform. High adaptative sense, and with the ability to learn quickly. “Communicate is the key to success as one and as a team”, that something I’ve learn with the time.</p><h1 id="9426f39a-40c9-4e46-aa17-3ba3827a96bc" class="">MOST RECENT WORK EXPERIENCE</h1><h2 id="94081d47-f179-4cff-8327-f9e2d21b426f" class="">Software Developer Analyst at MapfreBHD</h2><p id="c6321ce5-ca47-405a-abae-f7f62e213f16" class="">May 2022 - Present · 1 yr 1 mos [Santo Domingo, Dominican Republic] [B2C and B2B, Insurance]</p><p id="f0950099-744c-4894-b146-a1dcb4da8de1" class=""><strong>RESPONSIBILITIES</strong></p><ul id="88577aac-70ed-45d2-9ec0-f8f0ae72ea4f" class="bulleted-list"><li style="list-style-type:disc">Maintenance of the Insurance core, that was made in PL/SQL.</li></ul><ul id="e9bf841c-0bb7-4760-abf3-9a616d50a77e" class="bulleted-list"><li style="list-style-type:disc">Creation of functionalities for the user&#x27;s quality of life.</li></ul><ul id="86039cd5-7c79-4597-850a-9b54c4827a60" class="bulleted-list"><li style="list-style-type:disc">Elaborating complex projects, so that manual processes are completely automatic.</li></ul><p id="dede0560-35cf-4c2b-9ae4-d31c6b7b7c82" class=""><strong>KEY ACCOMPLISHMENTS</strong></p><ul id="8c852f73-0e23-439e-be28-e98dfd5e4e43" class="bulleted-list"><li style="list-style-type:disc">Improved a batch process by reducing the time from 2hrs to 45mins, by using indexes and removing a lot of code that only slows down the process, giving the same result.</li></ul><ul id="e75ad6ed-3fb3-4694-8269-f700043fd90c" class="bulleted-list"><li style="list-style-type:disc">Improved work flow by reducing steps to finish a task from 6 steps to 3 steps, by proposing to eliminate the intermediate steps, which only served to notify the superior, eliminating this reduces the time when entering the task.</li></ul><h2 id="2c0f74b9-4c81-4c0d-97b7-b8a501e31f6a" class="">Software Developer Analyst as Freelance</h2><p id="93b0f4ad-47f5-4f28-9563-02568b0a7234" class="">February 2020 - May 2022· 2 yr 2 mos [International]</p><p id="cfa880c1-840f-4ed3-9fb8-707d86dd1377" class=""><strong>RESPONSIBILITIES</strong></p><ul id="a1d54eaf-94bf-4150-9b89-9b7e048ba3ec" class="bulleted-list"><li style="list-style-type:disc">Website development using, modern technologies like ReactJS and VueJS.</li></ul><ul id="a65ca416-18ea-4536-b1a1-43390b3d07d7" class="bulleted-list"><li style="list-style-type:disc">Design engaging and responsive web pages.</li></ul><ul id="246515c0-8d35-4f66-95b1-678af7c3f957" class="bulleted-list"><li style="list-style-type:disc">Defining project objectives and project scopes.</li></ul><p id="17c63c80-7bb7-459c-999b-b877d22e88dd" class=""><strong>KEY ACCOMPLISHMENTS</strong></p><ul id="3c98d156-0725-4438-96f9-96fdfd67df33" class="bulleted-list"><li style="list-style-type:disc">Making impressive web pages with amazing animations and incredible performance.</li></ul><ul id="ea5b984e-74e4-4123-acbf-deddc4e51df6" class="bulleted-list"><li style="list-style-type:disc">Redesign client pages to look much modern and refreshing.</li></ul><h2 id="fb0a3ccc-ff04-4613-893f-420e2c9b9057" class="">Development Consultant at SitCorp</h2><p id="78421a6e-76ad-4f24-a948-15d4972e9d0b" class="">February 2019 - February 2020· 1 yr  [Santo Domingo, Dominican Republic] [B2B, Consulting]</p><p id="1e5ecb43-b704-47f8-87e5-d95690d26ba5" class=""><strong>RESPONSIBILITIES</strong></p><ul id="fc45588b-ce15-46d0-bcac-31864bac1526" class="bulleted-list"><li style="list-style-type:disc">Maintenance and development of new solutions to the ERP.</li></ul><ul id="3688f1d9-9fc4-4917-b0ab-969b87ed11d7" class="bulleted-list"><li style="list-style-type:disc">Defining project objectives and scopes.</li></ul><ul id="e1550332-ac12-4f06-80c8-87fe1597ffb2" class="bulleted-list"><li style="list-style-type:disc">Maintenance of code in C#, for Web Method and calls APIS.</li></ul><ul id="2b4ce6f0-78a5-4216-9972-1952b109094a" class="bulleted-list"><li style="list-style-type:disc">Distribution and planning of projects during the week.</li></ul><h1 id="f17591f7-3b52-49a7-9344-e36e9cdcfb83" class="">SKILLS</h1><div id="953abc94-77c4-4c54-8d1a-5980addc5102" class="column-list"><div id="8e324b10-3d1d-4de2-8abd-1801c9eafb25" style="width:33.333333333333336%" class="column"><ul id="55c356f2-b145-4dc3-b068-d91e65901900" class="bulleted-list"><li style="list-style-type:disc">REACTJS</li></ul><ul id="e814ee0e-697d-458e-a2e5-8cc4bab8fb64" class="bulleted-list"><li style="list-style-type:disc">NODE</li></ul><p id="9f6bab72-beb2-4f9e-a227-7c46ba33b6c1" class="">
+</p></div><div id="2b0bb149-e0f6-41f5-a4c9-1e6c8acdffba" style="width:33.333333333333336%" class="column"><ul id="ab129296-dba1-4430-b62c-3d13f4f7f61d" class="bulleted-list"><li style="list-style-type:disc">NEXTJS</li></ul><ul id="f23d15a3-29ed-4b72-8674-6c14107a03b7" class="bulleted-list"><li style="list-style-type:disc">NO SQL DATABASE (MongoDB and Redis)</li></ul></div><div id="902a4f8d-5c9c-4123-90f1-97c728c4b9c7" style="width:33.33333333333333%" class="column"><ul id="079a6382-3c1e-4728-9b0d-1934abd5c0e9" class="bulleted-list"><li style="list-style-type:disc">SQL DATABASE (Oracle and MySQL)</li></ul><p id="e2d4d9be-dbac-4dc2-bbab-50db16c11699" class="">
+</p></div></div><h1 id="eaf471f1-7216-4654-b9f3-b882cce5b701" class="">EDUCATION</h1><h2 id="f4c646a7-b6ef-48c9-a801-4ec3c5964472" class="">Software Engineering, Universidad APEC</h2><h3 id="56b244ea-59a2-411b-92ff-4c06b8f62750" class="">2022 [Santo Domingo, Dominican Republic]</h3><p id="c1c784b6-c97b-4915-add7-1382f66f8123" class="">
+</p><h2 id="64d4e4ec-11a1-4f7d-9839-5682b2899277" class="">Udemy</h2><h3 id="e40e9f74-d14a-4572-8be6-62478f89a272" class="">2022 [<a href="https://www.udemy.com/certificate/UC-ef8e7ce5-5beb-45d0-8668-eece85362731/"><strong>NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)</strong></a>]</h3><h3 id="1b056e43-0fdb-4ad7-9440-427660e9a7c5" class="">2020 [<a href="https://www.udemy.com/certificate/UC-2ea7f3c3-cd42-459a-9df1-2620cdd86483/"><strong>The Complete JavaScript Course 2023: From Zero to Expert!</strong></a>]</h3><h1 id="6ce999fc-308b-4b3d-b3e9-a07c50d9e34e" class="">LANGUAGES </h1><p id="134a904e-957c-4195-85bd-bf7945168132" class="">Spanish,  English.</p><p id="f232f970-8508-4cfc-807d-b272234f04df" class="">
+</p></div></article></body></html>
